@@ -1,8 +1,8 @@
 
-# Cool Project Name
+# Cool Project
 
 ## Description 
-Do something cool with this amazing new tool.
+A cool new tool to do cool new things.
 
 ## Table of Contents    
 * [Installation](#installation)
@@ -12,10 +12,10 @@ Do something cool with this amazing new tool.
 
 
 ## Installation
-Installing is easy, just do this...
+Here's how you install this...
 
 ## Usage 
-Here's how you do the cool thing with the cool new tool.
+Here's how you run this application, step by step...
 
 
 ## Credits
@@ -30,7 +30,7 @@ Here's how you do the cool thing with the cool new tool.
 none 
 
 ## Contributing
-Reach out about your ideas. 
+Here's how you contribute to this project... 
 
 ## Tests
 Here's how you run a test...
