@@ -77,14 +77,23 @@ ${answers.howTo}
 
 ## Credits
 *Collaborators
-    ${answers.collaborators}
-    ${answers.github}
+    *${answers.collaborators}
+    *${answers.github}
 
 *Other Attributions
-${answers.attributions} 
+    *${answers.attributions} 
 
 ## License
 ${answers.license} 
+
+## Contributing
+Here is how you contribute to this project.
+
+## Tests
+Some test instructions go here.
+
+## Questions
+Questions can be directed via email to [shiftymitch@gmail.com]("mailto:shiftymitch@gmail.com")
 
     `;
     // ## Badges

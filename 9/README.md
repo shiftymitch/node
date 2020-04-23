@@ -1,8 +1,8 @@
 
-# New Project Again
+# Your Project Name
 
 ## Description 
-New test description.
+A quick description of the project.
 
 ## Table of Contents    
 * [Installation](#installation)
@@ -12,21 +12,30 @@ New test description.
 
 
 ## Installation
-New installation instructions.
+Basic installation instructions go here.
 
 ## Usage 
-This is how you use the application.
+Here's how you use this application.
 
 
 ## Credits
 *Collaborators
-    Myself
-    https://shiftymitch.github.io/portfolio/2
+    *Myself
+    *https://shiftymitch.github.io/portfolio/2
 
 *Other Attributions
-none 
+    *none 
 
 ## License
 none 
+
+## Contributing
+Here is how you contribute to this project.
+
+## Tests
+Some test instructions go here.
+
+## Questions
+Questions can be directed via email to [shiftymitch@gmail.com]("mailto:shiftymitch@gmail.com")
 
     
