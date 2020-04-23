@@ -1,8 +1,8 @@
 
-# Your Project Name
+# Cool Project Name
 
 ## Description 
-A quick description of the project.
+Do something cool with this amazing new tool.
 
 ## Table of Contents    
 * [Installation](#installation)
@@ -12,10 +12,10 @@ A quick description of the project.
 
 
 ## Installation
-Basic installation instructions go here.
+Installing is easy, just do this...
 
 ## Usage 
-Here's how you use this application.
+Here's how you do the cool thing with the cool new tool.
 
 
 ## Credits
@@ -30,12 +30,12 @@ Here's how you use this application.
 none 
 
 ## Contributing
-Here is how you contribute to this project.
+Reach out about your ideas. 
 
 ## Tests
-Some test instructions go here.
+Here's how you run a test...
 
 ## Questions
-Questions can be directed via email to shiftymitch @ gmail.com
+Questions can be directed via email to shiftymitch@gmail.com
 
     

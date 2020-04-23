@@ -5,7 +5,6 @@ const inquirer = require("inquirer");
 
 // promisify funciton
 const writeFileAsync = util.promisify(fs.writeFile);
-const readFileAsync = util.promisify(fs.readFile);
 
 // get user input
 function promptUser() {
@@ -50,6 +49,21 @@ function promptUser() {
             type: "input",
             name: "license",
             message: "License type: "
+        },
+        {
+            type: "input",
+            name: "contribute",
+            message: "How to contribute to this project: "
+        },
+        {
+            type: "input",
+            name: "test",
+            message: "How to run a test: "
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Email address to direct questions to: "
         }
     ]);
 }
@@ -87,13 +101,13 @@ ${answers.howTo}
 ${answers.license} 
 
 ## Contributing
-Here is how you contribute to this project.
+${answers.contribute} 
 
 ## Tests
-Some test instructions go here.
+${answers.test}
 
 ## Questions
-Questions can be directed via email to shiftymitch @ gmail.com
+Questions can be directed via email to ${answers.email}
 
     `;
 }
