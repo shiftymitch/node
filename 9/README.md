@@ -1,32 +1,32 @@
 
-    # New Project Name
+# New Project Again
 
-    ## Description 
-    Be wowed by the simplification of this README generator.
-    
-    ## Table of Contents    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    
-    
-    ## Installation
-    Demo install instructions
-    
-    ## Usage 
-    Demo usage of application instructions.
-    
-    
-    ## Credits
-    *Collaborators
-        Myself
-        https://shiftymitch.github.io/portfolio/2
-    
-    *Other Attributions
-    none 
-    
-    ## License
-    none 
+## Description 
+New test description.
+
+## Table of Contents    
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+
+## Installation
+New installation instructions.
+
+## Usage 
+This is how you use the application.
+
+
+## Credits
+*Collaborators
+    Myself
+    https://shiftymitch.github.io/portfolio/2
+
+*Other Attributions
+none 
+
+## License
+none 
 
     

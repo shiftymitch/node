@@ -56,35 +56,35 @@ function promptUser() {
 
 function generateREADME(answers) {
     return `
-    # ${answers.title}
+# ${answers.title}
 
-    ## Description 
-    ${answers.description}
-    
-    ## Table of Contents    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    
-    
-    ## Installation
-    ${answers.installation}
-    
-    ## Usage 
-    ${answers.howTo}
-    
-    
-    ## Credits
-    *Collaborators
-        ${answers.collaborators}
-        ${answers.github}
-    
-    *Other Attributions
-    ${answers.attributions} 
-    
-    ## License
-    ${answers.license} 
+## Description 
+${answers.description}
+
+## Table of Contents    
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+
+## Installation
+${answers.installation}
+
+## Usage 
+${answers.howTo}
+
+
+## Credits
+*Collaborators
+    ${answers.collaborators}
+    ${answers.github}
+
+*Other Attributions
+${answers.attributions} 
+
+## License
+${answers.license} 
 
     `;
     // ## Badges
