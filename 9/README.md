@@ -36,6 +36,6 @@ Here is how you contribute to this project.
 Some test instructions go here.
 
 ## Questions
-Questions can be directed via email to [shiftymitch@gmail.com]("mailto:shiftymitch@gmail.com")
+Questions can be directed via email to shiftymitch @ gmail.com
 
     

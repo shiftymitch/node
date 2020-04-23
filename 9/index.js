@@ -93,21 +93,9 @@ Here is how you contribute to this project.
 Some test instructions go here.
 
 ## Questions
-Questions can be directed via email to [shiftymitch@gmail.com]("mailto:shiftymitch@gmail.com")
+Questions can be directed via email to shiftymitch @ gmail.com
 
     `;
-    // ## Badges
-    
-    // ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-    
-    
-    // ## Contributing
-    
-    // If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-    
-    // ## Tests
-    
-    // Go the extra mile and write tests for your application. Then provide examples on how to run them.
 }
 
 //write file
