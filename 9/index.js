@@ -76,12 +76,12 @@ ${answers.howTo}
 
 
 ## Credits
-*Collaborators
-    *${answers.collaborators}
-    *${answers.github}
+* Collaborators
+    * ${answers.collaborators}
+    * ${answers.github}
 
-*Other Attributions
-    *${answers.attributions} 
+* Other Attributions
+    * ${answers.attributions} 
 
 ## License
 ${answers.license} 

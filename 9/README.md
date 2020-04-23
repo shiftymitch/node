@@ -19,12 +19,12 @@ Here's how you use this application.
 
 
 ## Credits
-*Collaborators
-    *Myself
-    *https://shiftymitch.github.io/portfolio/2
+* Collaborators
+    * Myself
+    * https://shiftymitch.github.io/portfolio/2
 
-*Other Attributions
-    *none 
+* Other Attributions
+    * none 
 
 ## License
 none 
