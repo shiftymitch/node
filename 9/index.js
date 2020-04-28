@@ -5,6 +5,7 @@ const inquirer = require("inquirer");
 
 // promisify funciton
 const writeFileAsync = util.promisify(fs.writeFile);
+const readFileAsync = util.promisify(fs.readFile);
 
 // get user input
 function promptUser() {
@@ -68,6 +69,7 @@ function promptUser() {
     ]);
 }
 
+//create README file
 function generateREADME(answers) {
     return `
 # ${answers.title}

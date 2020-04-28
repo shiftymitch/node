@@ -1,8 +1,8 @@
 
-# Cool Project
+# README GENERATOR
 
 ## Description 
-A cool new tool to do cool new things.
+A convenient tool to create README files, quickly and easily.
 
 ## Table of Contents    
 * [Installation](#installation)
@@ -12,32 +12,20 @@ A cool new tool to do cool new things.
 
 
 ## Installation
-Here's how you install this...
+Clone repo, or download.
 
 ## Usage 
-Here'show you use the app...
-
+Open downloaded folder, and run 'node index.js' in the cmd line.
 
 ## Credits
-* Collaborators
-    * Myself
-    * https://shiftymitch.github.io/portfolio/2
-
-* Other Attributions
-    * none 
+* Mitch Henderson
+* https://shiftymitch.github.io/portfolio/2
 
 ## License
-none 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Contributing
-Here's how you can contribute. 
-
-## Tests
-Here's how to run a test...
+No contributing necessary. Just clone the repo and make adjustments as needed. 
 
 ## Questions
 Questions can be directed via email to shiftymitch@gmail.com
-
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
-    
