@@ -1,6 +1,6 @@
 # Team Builder Template Engine
 
-![](./Assets/launch.png)
+![](./Assets/img/launch.png)
 
 ## Description
 

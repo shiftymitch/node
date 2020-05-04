@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg" href="../Assets/Images/cx_logo.svg">
+    <title>Portfolio | Team Builder</title>
+
+<!-- Style Sheets -->
+    <link rel="stylesheet" href="../Assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <link rel="stylesheet" href="../Assets/css/style.css">
 </head>
+<body class="bg2">
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky">
+        <img src="../Assets/Images/shiftycx_logo.svg" width="125px" class="d-inline-block align-top mr-4 ml-4" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://shiftymitch.github.io/portfolio/2">portfolio</a>
+                <a class="nav-item nav-link active" href="https://shiftymitch.github.io/portfolio/2/about.html">about</a>
+                <a class="nav-item nav-link" href="https://shiftymitch.github.io/portfolio/2/contact.html">contact</a>
             </div>
         </div>
-    </div>
+    </nav>
+    
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
-            </div>
+        <div class="my-team d-flex justify-content-center mt-5 text-light">
+            <h1>My Team</h1>
+        </div>
+        <div class="row d-flex justify-content-around mt-5 mb-5">
+            {{ team }}
         </div>
     </div>
-</body>
 
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <h5 class="text-light">[site & background designed by <a href="https://github.com/shiftymitch" target="_blank">Mitch Henderson</a>]</h5>
+            </div>
+            <p class="text-light">&copy; Copyright 2020</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    
+    <!-- JQuery --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+    
+    <!-- My Scripts -->
+    <script type="text/javascript" src="../Assets/js/scripts.js"></script>
+
+</body>
 </html>
