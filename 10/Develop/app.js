@@ -9,11 +9,11 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
-let employee = "";
+const employeesList = [];
 
 // initial prompt questions
 function initialQuestions() {
-    console.log("Add new Team Member:")
+    console.log("Add new Team Member:");
     return inquirer
         .prompt([
             {
@@ -49,7 +49,6 @@ function managerQuestions() {
             message: "Office Number: "
         }
     ]);
-
 }
 
 function engineerQuestions() {
@@ -72,34 +71,86 @@ function internQuestions() {
     ]);
 }
 
-
-initialQuestions()
-    .then(function(answers) {
-
-        //role switcher
-        switch(answers.role) {
-            case "Manager":
-                managerQuestions();
-                employee = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
-                return;
-            case "Engineer":
-                engineerQuestions();
-                employee = new Engineer(answers.name, answers.id, answers.email, answers.github);
-                return;
-            case "Intern":
-                internQuestions();
-                employee = new Intern(answers.name, answers.id, answers.email, answers.school);
-                return;
+//add member inquiry
+function addMember() {
+    return inquirer.prompt([
+        {
+            type: "list",
+            name: "addMember",
+            message: "Would you like to add a new member?",
+            choices: ["Yes", "No"]
         }
-    })
-    .catch(function(err){
-        console.log(err);
-    });
+    ]);
+}
+
+function newTeamMember() {
+    initialQuestions()
+        .then(function(answer1) {
+            const name = answer1.name;
+            const id = answer1.id;
+            const email = answer1.email;
+            //role switcher
+            switch(answer1.role) {
+                //manager case
+                case "Manager":
+                    managerQuestions()
+                        .then(function(answer2){
+                            let manager = new Manager(name, id, email, answer2.officeNumber);
+                            employeesList.push(manager);
+                            askToAddMember();
+                        });
+                    break;
+
+                //engineer case
+                case "Engineer":
+                    engineerQuestions()
+                        .then(function(answer2){
+                            let engineer = new Engineer(name, id, email, answer2.github);
+                            employeesList.push(engineer);
+                            askToAddMember();
+                        });
+                    break;
+
+                //intern case
+                case "Intern":
+                    internQuestions()
+                        .then(function(answer2){
+                            let intern = new Intern(name, id, email, answer2.school);
+                            employeesList.push(intern);
+                            askToAddMember();
+                        });
+                    break;
+            }
+        })
+        .catch(function(err){
+            console.log(err);
+        });
+}
+
+function askToAddMember() {
+    addMember()
+            .then(function(answer){
+                if (answer.addMember === "Yes") {
+                    newTeamMember();
+                } else if (answer.addMember === "No" && employeesList !== null) {
+                    fs.writeFileSync("../Output/myTeam.html", render(employeesList));
+                }
+                else console.log("App closed. Run 'node app.js' again to restart the program.")
+            });
+}
+
+function launch() {
+    console.log("Welcome to Team Builder!")
+    askToAddMember();
+}
+
+launch();
+
+
+
 
 
 // and to create objects for each team member (using the correct classes as blueprints!)
-
-
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
