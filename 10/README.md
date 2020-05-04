@@ -1,5 +1,7 @@
 # Team Builder Template Engine
 
+![](./Assets/launch.png)
+
 ## Description
 
 A node application to easily build a team web page.
