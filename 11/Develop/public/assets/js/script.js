@@ -4,6 +4,7 @@ var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
 var $deleteNoteBtn = $(".delete-note");
 var $noteList = $(".list-container .list-group");
+var lastNoteIndex = "";
 
 // activeNote is used to keep track of the note in the textarea
 var activeNote = {};
@@ -54,7 +55,8 @@ var renderActiveNote = function() {
 var handleNoteSave = function() {
   var newNote = {
     title: $noteTitle.val(),
-    text: $noteText.val()
+    text: $noteText.val(),
+    id: lastNoteIndex
   };
 
   saveNote(newNote).then(function(data) {
@@ -124,6 +126,8 @@ var renderNoteList = function(notes) {
   }
 
   $noteList.append(noteListItems);
+  lastNoteIndex = noteListItems.length;
+  lastNoteIndex++;
 };
 
 // Gets notes from the db and renders them to the sidebar
