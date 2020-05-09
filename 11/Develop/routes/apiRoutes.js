@@ -1,29 +1,28 @@
-const fs = require('fs'); 
-const path = require('path');
-const notesData = require("../data/db.json");
+let noteData = require("../db/db");
+const fs = require("fs");
+
 
 module.exports = function(app) {
 
-    app.get("/api/notes", function(req, res) {
-        res.json(notesData);
-    });
-    
-    app.post("/api/notes", function(req, res) {
-        notesData.push(req.body);
-        res.json(true);
+    app.get("/api/notes", function (req, res) {
+        res.json(noteData);
     });
 
-    app.delete("/api/notes/:id", function(req, res) {
-        var chosen = req.params.id;
-        console.log(chosen)
-        for (var i = 0; i < notesData.length; i++) {
-            if(chosen === notesData[i].id) {
-                notesData.splice(i, 1);
-                fs.writeFileSync(path.join(__dirname, "../data/db.json"), JSON.stringify(notesData));
-                res.json(true);
+    app.post("/api/notes", function (req, res) {
+        noteData.push(req.body);
+        res.json(true);
+    });
+    
+    app.delete("/api/notes/:id", function (req, res) {
+        let chosen = req.params.id;
+        console.log(chosen);
+        for (let note of noteData) {
+            if (chosen === note.id) {
+                let index = noteData.indexOf(note);
+                noteData.splice(index, 1);
+                fs.writeFileSync("../db/db.json", noteData);
             }
         }
-        console.log(notesData[i]);
-        return res.json(false);
+        res.send('Got a DELETE request');
     });
 };
